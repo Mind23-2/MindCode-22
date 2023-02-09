@@ -1,0 +1,27 @@
+{
+  "job_name": "XMCQ",
+  "SDK": "ModelArts",
+  "code_dir": "train/train_dir/",
+  "boot_file": "train.py",
+  "outputs": [
+    {
+      "output_dir": "train/output/",
+      "name": "output_url"
+    }
+  ],
+  "frameworks": {
+    "framework_type": "Ascend-Powered-Engine",
+    "framework_version": "mindspore_1.5.1-cann_5.0.3-py_3.7-euler_2.8.3-aarch64"
+  },
+  "train_instance_type": "modelarts.kat1.xlarge.public",
+  "log_url": "train/log/",
+  "env_variables": {},
+  "job_description": "MindSpore分类比赛",
+  "hypeparameters": [],
+  "inputs": [
+    {
+      "input_url": "datasets/drizzlezyk/caltech_for_user/",
+      "name": "data_url"
+    }
+  ]
+}
